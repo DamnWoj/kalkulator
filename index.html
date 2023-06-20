@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pl">
+     <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+        <title>Kalkulator 2ch składowych</title>
+        <link href="style.css" rel="stylesheet" /> 
+        <script src="plik.js"></script>
+     </head>
+
+     <body>
+
+<div class="wrapper">
+    <main>
+        <h1>Prosty kalkulator dwóch składowych</h1>
+
+        <div class="dzialanieMat" id="Dodawanie">
+            <h2>Dodawanie</h2>
+            <form>
+                <label for="dodawanie1">składnik1</label>
+                <input type="number" id="dodawanie1" name="dodawanie1">
+            </form>
+            <form>
+                <label for="dodawanie2">składnik2</label>
+                <input type="number" id="dodawanie2" name="dodawanie2">
+            </form>
+            <input type="submit" value="Oblicz" id="wynik" class="button">
+        </div>
+
+        <div class="dzialanieMat" id="Odejmowanie">
+            <h2>Odejmowanie</h2>
+            <form>
+                <label for="odejmowanie1">odjemna</label>
+                <input type="number" id="odejmowanie1" name="odejmowanie1">
+            </form>
+            <form>
+                <label for="odejmowanie2">odjemnik</label>
+                <input type="number" id="odejmowanie2" name="odejmowanie2">
+            </form>
+            <input type="submit" value="Oblicz" id="wynik1" class="button">
+        </div>
+
+        <div class="dzialanieMat" id="Mnozenie">
+            <h2>Mnożenie</h2>
+            <form>
+                <label for="mnozenie">czynnik1</label>
+                <input type="number" id="mnozenie1" name="mnozenie1">
+            </form>
+            <form>
+                <label for="mnozenie">czynnik2</label>
+                <input type="number" id="mnozenie2" name="mnozenie2">
+            </form>
+            <input type="submit" value="Oblicz" id="wynik2" class="button">
+        </div>
+
+        <div class="dzialanieMat" id="Dzielenie">
+            <h2>Dzielenie</h2>
+            <form>
+                <label for="dzielenie">dzielna</label>
+                <input type="number" id="dzielenie1" name="dzielenie1">
+            </form>
+            <form>
+                <label for="dzielenie">dzielnik</label>
+                <input type="number" id="dzielenie2" name="dzielenie2">
+            </form>
+            <input type="submit" value="Oblicz" id="wynik3" class="button">
+        </div>
+    </main>
+
+    <aside>
+        <img src="photo.jpg" width="370" class="einsteinPhoto">
+    </aside>
+
+</div>
+
+     </body>
+</html>
