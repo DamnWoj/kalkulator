@@ -1,19 +1,24 @@
 window.onload = function() {
-   
+
     window.wynik.onclick = function() {
-        var dodawanie1 = Number(document.getElementById('dodawanie1').value); // dziala jak powinno
-        var dodawanie2 = Number(document.getElementById('dodawanie2').value); //.value i "dodawanie1" przerzuca tekst
+        var dodawanie1 = Number(document.getElementById('dodawanie1').value); 
+        var dodawanie2 = Number(document.getElementById('dodawanie2').value); 
        
         
-        function wynikDodawanie() {                     // trzeba zamienic to na liczbe za pomoca
-            var wynik = dodawanie1 + dodawanie2;                              // number
+        function wynikDodawanie() {                     
+            var wynik = dodawanie1 + dodawanie2;                              
             return wynik;
         }
         
         
-        var ekran = wynikDodawanie(dodawanie1, dodawanie2); //dodawanie dziala ok
-        console.log(dodawanie1, dodawanie2, ekran);
-        alert('Wynik dodawania to ' + ekran);
+        var wynikdod = wynikDodawanie(dodawanie1, dodawanie2); 
+        console.log(dodawanie1, dodawanie2, wynikdod);
+        //alert('Wynik dodawania to ' + wynikdod);
+        
+        var input1 = document.getElementById('wynik-dod');
+        input1.value = wynikdod;
+        //document.getElementById('wynik-dod').innerHTML = wynikdod; // wyświetla w HTML, nie w polu formularza input
+       
     }
 
     window.wynik1.onclick = function() {
@@ -23,13 +28,15 @@ window.onload = function() {
         function wynikOdejmowanie() {               
             var wynik1 = odejmowanie1 - odejmowanie2;                          
             return wynik1;
-
         }
 
+        var wynikod = wynikOdejmowanie(odejmowanie1, odejmowanie2); 
+        console.log(odejmowanie1, odejmowanie2, wynikod);
+        //alert('Wynik odejmowania to ' + ekran);
 
-        var ekran = wynikOdejmowanie(odejmowanie1, odejmowanie2); //odejmoawanie dziala ok
-        console.log(odejmowanie1, odejmowanie2, ekran);
-        alert('Wynik odejmowania to ' + ekran);
+        var input1 = document.getElementById('wynik-od');
+        input1.value = wynikod;
+        //document.getElementById('wynik-od').innerHTML = wynikod;
     }
 
     window.wynik2.onclick = function() {
@@ -39,13 +46,15 @@ window.onload = function() {
         function wynikMnozenie() {               
             var wynik2 = czynnik1 * czynnik2;                          
             return wynik2;
-
         }
 
+        var wynikmnoz = wynikMnozenie(mnozenie1, mnozenie2); 
+        console.log(mnozenie1, mnozenie2, wynikmnoz);
+        //alert('Wynik mnożenia to ' + ekran);
 
-        var ekran = wynikMnozenie(mnozenie1, mnozenie2); //mnozenie dziala ok
-        console.log(mnozenie1, mnozenie2, ekran);
-        alert('Wynik mnożenia to ' + ekran);
+        var input1 = document.getElementById('wynik-mnoz');
+        input1.value = wynikmnoz;
+        //document.getElementById('wynik-mnoz').innerHTML = wynikmnoz;
     }
 
     window.wynik3.onclick = function() {
@@ -55,22 +64,19 @@ window.onload = function() {
         function wynikDzielenie() {               
             var wynik3 = dzielenie1 / dzielenie2;                          
             return wynik3;
-
         }
 
-
-        var ekran = wynikDzielenie(dzielenie1, dzielenie2); //dzielenie dziala ok
-        console.log(dzielenie1, dzielenie2, ekran);
+        var wynikdziel = wynikDzielenie(dzielenie1, dzielenie2); 
+        console.log(dzielenie1, dzielenie2, wynikdziel);
         if (dzielenie2 == 0) {
             alert('Nie można dzielić przez 0!');
         }  
         else {
-            alert('Wynik dzielenia to ' + ekran);
-       } 
-        
-        
+            //alert('Wynik dzielenia to ' + ekran);
+            var input1 = document.getElementById('wynik-dziel');
+            input1.value = wynikdziel;
+            //document.getElementById('wynik-dziel').innerHTML = wynikdziel;
+       }    
     }
 
 }
-    
-    
