@@ -2,9 +2,7 @@
 <html lang="pl">
      <head>
         <meta charset="UTF-8">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
         <title>Kalkulator 2ch składowych</title>
         <link href="style.css" rel="stylesheet" /> 
         <script src="plik.js"></script>
@@ -18,13 +16,13 @@
 
         <div class="dzialanieMat" id="Dodawanie">
             <h2>Dodawanie</h2>
-            <form>
-                <label for="dodawanie1">składnik1</label>
-                <input type="number" id="dodawanie1" name="dodawanie1">
+             <form>
+                <!-- <label for="dodawanie1">składnik1</label> -->
+                <input type="number" id="dodawanie1" name="dodawanie1" placeholder="Składnik1">
             </form>
             <form>
-                <label for="dodawanie2">składnik2</label>
-                <input type="number" id="dodawanie2" name="dodawanie2">
+                <!-- <label for="dodawanie2">składnik2</label> -->
+                <input type="number" id="dodawanie2" name="dodawanie2" placeholder="Składnik2">
             </form>
              <label>
                 <input type="text" id="wynik-dod" value="Wynik" disabled>
@@ -36,12 +34,10 @@
         <div class="dzialanieMat" id="Odejmowanie">
             <h2>Odejmowanie</h2>
             <form>
-                <label for="odejmowanie1">odjemna</label>
-                <input type="number" id="odejmowanie1" name="odejmowanie1">
+                <input type="number" id="odejmowanie1" name="odejmowanie1" placeholder="Odjemna">
             </form>
             <form>
-                <label for="odejmowanie2">odjemnik</label>
-                <input type="number" id="odejmowanie2" name="odejmowanie2">
+                <input type="number" id="odejmowanie2" name="odejmowanie2" placeholder="Odjemnik">
             </form>
               <label>
                 <input type="text" id="wynik-od" value="Wynik" disabled>
@@ -51,13 +47,11 @@
 
         <div class="dzialanieMat" id="Mnozenie">
             <h2>Mnożenie</h2>
-            <form>
-                <label for="mnozenie">czynnik1</label>
-                <input type="number" id="mnozenie1" name="mnozenie1">
+           <form>
+                <input type="number" id="mnozenie1" name="mnozenie1" placeholder="Czynnik1">
             </form>
             <form>
-                <label for="mnozenie">czynnik2</label>
-                <input type="number" id="mnozenie2" name="mnozenie2">
+                <input type="number" id="mnozenie2" name="mnozenie2" placeholder="Czynnik2">
             </form>
              <label>
                 <input type="text" id="wynik-mnoz" value="Wynik" disabled>
@@ -67,13 +61,11 @@
 
         <div class="dzialanieMat" id="Dzielenie">
             <h2>Dzielenie</h2>
-            <form>
-                <label for="dzielenie">dzielna</label>
-                <input type="number" id="dzielenie1" name="dzielenie1">
+             <form>
+                <input type="number" id="dzielenie1" name="dzielenie1" placeholder="Dzielna">
             </form>
             <form>
-                <label for="dzielenie">dzielnik</label>
-                <input type="number" id="dzielenie2" name="dzielenie2">
+                <input type="number" id="dzielenie2" name="dzielenie2" placeholder="Dzielnik">
             </form>
              <label>
                 <input type="text" id="wynik-dziel" value="Wynik" disabled>
