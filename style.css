@@ -10,8 +10,8 @@ body {
     display: flex;
     flex-direction: row-reverse;
     width: 950px;
-    height: 680px;
-    max-height: 700px;
+    height: 780px;
+    max-height: 800px;
     justify-content: left ;
     margin: 0 auto;
 }
