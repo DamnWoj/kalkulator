@@ -1,79 +1,83 @@
 window.onload = function() {
 
     window.wynik.onclick = function() {
-        var dodawanie1 = Number(document.getElementById('dodawanie1').value); 
-        var dodawanie2 = Number(document.getElementById('dodawanie2').value); 
+        let dodawanie1 = Number(document.getElementById('dodawanie1').value); 
+        let dodawanie2 = Number(document.getElementById('dodawanie2').value); 
        
         
         function wynikDodawanie() {                     
-            var wynik = dodawanie1 + dodawanie2;                              
+            let wynik = dodawanie1 + dodawanie2;                              
+            wynik = Math.floor(wynik * 1000) / 1000;                           
             return wynik;
         }
         
         
-        var wynikdod = wynikDodawanie(dodawanie1, dodawanie2); 
+        let wynikdod = wynikDodawanie(dodawanie1, dodawanie2); 
         console.log(dodawanie1, dodawanie2, wynikdod);
         //alert('Wynik dodawania to ' + wynikdod);
         
-        var input1 = document.getElementById('wynik-dod');
+        let input1 = document.getElementById('wynik-dod');
         input1.value = wynikdod;
         //document.getElementById('wynik-dod').innerHTML = wynikdod; // wyświetla w HTML, nie w polu formularza input
        
     }
 
     window.wynik1.onclick = function() {
-        var odejmowanie1 = Number(document.getElementById('odejmowanie1').value); 
-        var odejmowanie2 = Number(document.getElementById('odejmowanie2').value);
+        let odejmowanie1 = Number(document.getElementById('odejmowanie1').value); 
+        let odejmowanie2 = Number(document.getElementById('odejmowanie2').value);
 
         function wynikOdejmowanie() {               
-            var wynik1 = odejmowanie1 - odejmowanie2;                          
-            return wynik1;
+            let wynik = odejmowanie1 - odejmowanie2;                          
+            wynik = Math.floor(wynik * 1000) / 1000;                           
+            return wynik;
         }
 
-        var wynikod = wynikOdejmowanie(odejmowanie1, odejmowanie2); 
+        let wynikod = wynikOdejmowanie(odejmowanie1, odejmowanie2); 
         console.log(odejmowanie1, odejmowanie2, wynikod);
         //alert('Wynik odejmowania to ' + ekran);
 
-        var input1 = document.getElementById('wynik-od');
+        let input1 = document.getElementById('wynik-od');
         input1.value = wynikod;
         //document.getElementById('wynik-od').innerHTML = wynikod;
     }
 
     window.wynik2.onclick = function() {
-        var czynnik1 = Number(document.getElementById('mnozenie1').value); 
-        var czynnik2 = Number(document.getElementById('mnozenie2').value);
+        let czynnik1 = Number(document.getElementById('mnozenie1').value); 
+        let czynnik2 = Number(document.getElementById('mnozenie2').value);
 
         function wynikMnozenie() {               
-            var wynik2 = czynnik1 * czynnik2;                          
-            return wynik2;
+            let wynik = czynnik1 * czynnik2;                          
+            wynik = Math.floor(wynik * 1000) / 1000;                           
+            return wynik;
         }
 
-        var wynikmnoz = wynikMnozenie(mnozenie1, mnozenie2); 
+        let wynikmnoz = wynikMnozenie(mnozenie1, mnozenie2); 
         console.log(mnozenie1, mnozenie2, wynikmnoz);
         //alert('Wynik mnożenia to ' + ekran);
 
-        var input1 = document.getElementById('wynik-mnoz');
+        let input1 = document.getElementById('wynik-mnoz');
         input1.value = wynikmnoz;
         //document.getElementById('wynik-mnoz').innerHTML = wynikmnoz;
     }
 
     window.wynik3.onclick = function() {
-        var dzielenie1 = Number(document.getElementById('dzielenie1').value); 
-        var dzielenie2 = Number(document.getElementById('dzielenie2').value);
+        let dzielenie1 = Number(document.getElementById('dzielenie1').value); 
+        let dzielenie2 = Number(document.getElementById('dzielenie2').value);
 
         function wynikDzielenie() {               
-            var wynik3 = dzielenie1 / dzielenie2;                          
-            return wynik3;
+            let wynik = dzielenie1 / dzielenie2;                          
+            wynik = Math.floor(wynik * 1000) / 1000;                           
+            return wynik;
         }
 
-        var wynikdziel = wynikDzielenie(dzielenie1, dzielenie2); 
+        let wynikdziel = wynikDzielenie(dzielenie1, dzielenie2); 
         console.log(dzielenie1, dzielenie2, wynikdziel);
         if (dzielenie2 == 0) {
             alert('Nie można dzielić przez 0!');
         }  
         else {
             //alert('Wynik dzielenia to ' + ekran);
-            var input1 = document.getElementById('wynik-dziel');
+            let input1 = document.getElementById('wynik-dziel');
             input1.value = wynikdziel;
             //document.getElementById('wynik-dziel').innerHTML = wynikdziel;
        }    
