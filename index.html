@@ -26,6 +26,10 @@
                 <label for="dodawanie2">składnik2</label>
                 <input type="number" id="dodawanie2" name="dodawanie2">
             </form>
+             <label>
+                <input type="text" id="wynik-dod" value="Wynik" disabled>
+                <!-- Wynik to: <p id="wynik-dod"></p> -->
+            </label>
             <input type="submit" value="Oblicz" id="wynik" class="button">
         </div>
 
@@ -39,6 +43,9 @@
                 <label for="odejmowanie2">odjemnik</label>
                 <input type="number" id="odejmowanie2" name="odejmowanie2">
             </form>
+              <label>
+                <input type="text" id="wynik-od" value="Wynik" disabled>
+            </label>
             <input type="submit" value="Oblicz" id="wynik1" class="button">
         </div>
 
@@ -52,6 +59,9 @@
                 <label for="mnozenie">czynnik2</label>
                 <input type="number" id="mnozenie2" name="mnozenie2">
             </form>
+             <label>
+                <input type="text" id="wynik-mnoz" value="Wynik" disabled>
+            </label>
             <input type="submit" value="Oblicz" id="wynik2" class="button">
         </div>
 
@@ -65,6 +75,9 @@
                 <label for="dzielenie">dzielnik</label>
                 <input type="number" id="dzielenie2" name="dzielenie2">
             </form>
+             <label>
+                <input type="text" id="wynik-dziel" value="Wynik" disabled>
+            </label>
             <input type="submit" value="Oblicz" id="wynik3" class="button">
         </div>
     </main>
@@ -74,6 +87,8 @@
     </aside>
 
 </div>
-
-     </body>
+     <script>
+          feather.replace()
+    </script>
+</body>
 </html>
