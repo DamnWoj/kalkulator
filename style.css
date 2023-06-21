@@ -12,6 +12,10 @@ body {
     margin: 0 auto;
 }
 
+p {
+    margin:0 auto;
+}
+
 .einsteinPhoto {
     margin-top: 50px;
 }
