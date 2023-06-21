@@ -17,24 +17,30 @@ body {
 }
 
 .dzialanieMat {
-    margin: 15px 0px 0px 40px;
+    margin: 2px 0px 0px 140px;
     padding: 5px 5px 5px 5px;;
     /* border: 2px solid white; */ 
-    width: 400px;
+    width: 360px;
 }
 
 h1 {
     text-align: center;
     justify-content: center;
-    margin-left: 45px;
+    margin-top: 5px;
+    margin-left: 60px;
+    margin-bottom: 5px;
+    font-size: 30px;
 }
 
 h2 {
     width: 400px;
+    font-size: 26px;
+    margin: 15px;
+    margin-left: 0px;
 }
 
 main {
-    padding: 30px 40px 120px 4px;
+    padding: 30px 40px 240px 4px;
 }
 
 aside {
@@ -54,4 +60,9 @@ aside {
     font-size: 16px;
     touch-action: manipulation;
     cursor: pointer;
+}
+
+.button:hover {
+    opacity: 80%;
+    transition: all 0.3s;
 }
